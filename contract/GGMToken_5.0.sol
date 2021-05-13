@@ -3,7 +3,7 @@ pragma solidity ^0.5.00;
 // ----------------------------------------------------------------------------
 // 'SFS-ZW12' token contract
 //
-// Deployed to : 0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9
+// Deployed to : 0x17485C53c6EEE2f575b0dA0b9464e5450101E4ab
 // Symbol      : SFSZW12
 // Name        : SFSZW12Token
 // Total supply: 100000000
@@ -117,8 +117,8 @@ contract SFSZW12Token is ERC20Interface, Owned, SafeMath {
         name = "SFSZW12Token";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9] = _totalSupply;
-        emit Transfer(address(0), 0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9, _totalSupply);
+        balances[0x17485C53c6EEE2f575b0dA0b9464e5450101E4ab] = _totalSupply;
+        emit Transfer(address(0), 0x17485C53c6EEE2f575b0dA0b9464e5450101E4ab, _totalSupply);
     }
 
 
