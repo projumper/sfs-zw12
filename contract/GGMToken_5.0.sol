@@ -1,11 +1,11 @@
 pragma solidity ^0.5.00;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'SFS-ZW12' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
+// Deployed to : 0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9
+// Symbol      : SFSZW12
+// Name        : SFSZW12Token
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract SFSZW12Token is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "GGM";
-        name = "GGMToken";
+        symbol = "SFSZW12";
+        name = "SFSZW12Token";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0xFEB02D9383C49A8373F88e82EbCecB553c1837bf] = _totalSupply;
-        emit Transfer(address(0), 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf, _totalSupply);
+        balances[0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9] = _totalSupply;
+        emit Transfer(address(0), 0xf511B3A77eB70c0096D5Da296fcBAEd723fA90c9, _totalSupply);
     }
 
 
